@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính diện tích</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tính diện tích</h1>
+    <div class="form-section">
+      <h2>Diện tích hình chữ nhật</h2>
+      <label for="rect-length">Chiều dài:</label>
+      <input type="number" id="rect-length" placeholder="Nhập chiều dài">
+      <label for="rect-width">Chiều rộng:</label>
+      <input type="number" id="rect-width" placeholder="Nhập chiều rộng">
+      <button onclick="calculateRectangle()">Tính</button>
+      <p id="rect-result">Kết quả: </p>
+    </div>
+    <div class="form-section">
+      <h2>Diện tích hình tam giác</h2>
+      <label for="tri-base">Cạnh đáy:</label>
+      <input type="number" id="tri-base" placeholder="Nhập cạnh đáy">
+      <label for="tri-height">Chiều cao:</label>
+      <input type="number" id="tri-height" placeholder="Nhập chiều cao">
+      <button onclick="calculateTriangle()">Tính</button>
+      <p id="tri-result">Kết quả: </p>
+    </div>
+    <div class="form-section">
+      <h2>Diện tích hình vuông</h2>
+      <label for="square-side">Cạnh:</label>
+      <input type="number" id="square-side" placeholder="Nhập cạnh">
+      <button onclick="calculateSquare()">Tính</button>
+      <p id="square-result">Kết quả: </p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
